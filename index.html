@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-5">
+          <form id="userForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                class="form-control"
+                id="fullName"
+                placeholder="Enter your Name and Surname"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="age" name="age" class="form-label">Age</label>
+              <input type="number"class="form-control" id="age"
+                placeholder="Enter your Age"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="details" name="details" class="form-label">Details</label>
+              <textarea class="form-control" id="details" rows="3"></textarea>
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+            <button class="btn btn-danger"  id="updateButton" type="button">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Details</th>
+            <th scope="col"> </th>
+
+          </tr>
+        </thead>
+        <tbody id="userListContainer"></tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
